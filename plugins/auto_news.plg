@@ -1,0 +1,26 @@
+<?php
+
+function autoNews($db, $userid, $catid, $title, $text) {
+		$sql = "INSERT INTO news(user_id, title, text, date) " .
+				"VALUES ('".$userid."', '".$title."', '".$text."', NOW())";
+		$result = $db->query($sql);
+		if (!$result) {
+			die ('Etwas stimmte mit dem Query nicht: '.$db->error);
+		}
+		$sql = "SELECT id FROM news WHERE (user_id = '".$userid."'" .
+				"AND title = '".$title."'" .
+				"AND text = '".$text."') LIMIT 0,1";
+		$result = $db->query($sql);
+		if (!$result) {
+			die ('Etwas stimmte mit dem Query nicht: '.$db->error);
+		}
+		$news_id = $result->fetch_assoc();
+		$sql = "INSERT INTO news_2_cat(cat_id, news_id) VALUES ('".$catid."', '".$news_id['id']."')";
+		$result = $db->query($sql);
+		if (!$result) {
+			die ('Etwas stimmte mit dem Query nicht: '.$db->error);
+		}		
+		return null;
+}
+
+?>

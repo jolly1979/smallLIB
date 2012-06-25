@@ -1,0 +1,171 @@
+body {
+ color: black;
+ background-color: white;
+ font-size: 100.01%;
+ font-family: Helvetica,Arial,sans-serif;
+ margin: 0;
+ padding: 1em 0;
+ text-align: center;
+}
+
+div#Seite {
+ text-align: left;
+ margin: 0 auto;
+ width: 980px;
+ padding: 0;
+ background: #ffffe0 url(hintergrund.png) repeat-y;
+ border: 2px ridge silver;
+}
+
+html>body div#Seite {
+ border-color: gray;
+}
+
+h1 {
+ font-size: 1.5em;
+ margin: 0;
+ padding: 0.3em;
+ text-align: center;
+ background: #fed;
+ border-bottom: 1px solid silver;
+ }
+
+div#menu_left {
+ float: left;
+ width: 200px;
+} 
+
+div#Login {
+ font-size: 0.83em;
+ margin: 0.5em 0.5em 0.5em 0.5em;
+ color: black;
+ background-color: white;
+ padding: 0 0.5em 0.5em 0.5em;
+}
+
+div#Login h3 {
+ font-size: 1.1em;
+ text-align: center;
+ font-weight: bold;
+ margin: 0;
+ padding: 0.2em 0 0.2em 0;
+}
+ 
+ul#Navigation {
+ font-size: 0.83em;
+ margin: 0;
+ padding: 0 0 0.5em 0;
+ }
+ 
+ul#Navigation li {
+ list-style: none;
+ margin: 0;
+ padding: 0.5em 0.5em 0 0.5em;
+ }
+
+ ul#Navigation ul li {
+ list-style: none;
+ margin: 0;
+ padding: 0.2em 0.5em 0 0;
+ }
+
+ul#Navigation ul{
+ list-style: none;
+ margin: 0;
+ padding: 0 0 0 1em;
+ }
+ 
+ ul#Navigation a {
+ display: block;
+ padding: 0.2em;
+ font-weight: bold;
+ }
+
+ ul#Navigation ul a {
+ display: block;
+ padding: 0.2em;
+ font-weight: bold;
+ }
+ 
+ ul#Navigation a:link {
+ color: black;
+ background-color: white;
+ }
+ 
+ ul#Navigation a:visited {
+ color: black;
+ background-color: white;
+ }
+
+ ul#Navigation a:hover {
+ color: black;
+ background-color: #ddd;
+ } 
+ 
+ ul#Navigation a:active {
+ color: white;
+ background-color: gray;
+ }
+
+div#Inhalt {
+ margin: 0 0 1em 220px;
+ padding: 0 1em 0 0;
+ }
+
+* html div#Inhalt {
+ height: 1em;
+ margin-bottom: 0;
+ } 
+ 
+div#Inhalt h2 {
+ font-size: 1.2em;
+ margin: 0.2em 0;
+ color: navy;
+ }
+
+p#Fusszeile {
+ clear: both;
+ font-size: 0.83em;
+ margin: 0;
+ padding: 0.1em;
+ text-align: center;
+ background-color: #fed;
+ border-top: 1px solid silver;
+ }
+ 
+div.start_filter {
+
+ }
+
+p.filterbox {
+ text-align: right;
+ font-size: 0.8em;
+ padding: 0;
+ margin: 0;
+ }
+
+div.start_news {
+ border: 1px solid silver;
+ }
+ 
+h1.start_news_header {
+ font-size: 1em;
+ text-align: left;
+ background: #fed;
+ border: 0;
+ padding: 0 0 0 0.5em;
+ margin: 0;
+ }
+ 
+ p.start_news_infobox {
+ font-size: 0.6em;
+ padding: 0 0 0 0.2em;
+ margin: 0;
+ }
+ 
+ div.news_contentbox {
+ font-size: 0.8em;
+ padding: 0.2em;
+ margin: 0;
+ }
+ 
